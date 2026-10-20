@@ -3,6 +3,7 @@ version: "3.8"
 services:
   accounts-api-app:
     container_name: accounts-api-app
+    command: npx nodemon --legacy-watch index.js
     restart: always
     build:
       context: .
